@@ -48,6 +48,13 @@ public class Main {
         list.add(1);
         System.out.println(list.toString());
         System.out.println(list.get(5));
+        System.out.println(list.search(1));
+        list.add(12,3);
+        System.out.println(list.toString());
+        list.remove(3);
+        System.out.println(list.toString());
+        list.sort();
+        System.out.println(list.toString());
 
 
     }

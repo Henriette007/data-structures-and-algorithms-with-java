@@ -1,4 +1,4 @@
-public class Node<T> {
+public class Node<T extends Comparable<T>> {
     private T data;
     private Node<T> next;
 
@@ -20,5 +20,12 @@ public class Node<T> {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public Integer compareTo(Node<T> node){
+        if(node == null){
+            return null;
+        }
+        return this.data.compareTo(node.data);
     }
 }
