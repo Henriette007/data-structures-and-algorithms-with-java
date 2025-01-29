@@ -121,4 +121,22 @@ public class ArrayList {
         return stringArray;
     }
 
+    public void reverse(){
+//        int[] reverse = new int[size];
+//        int index =0;
+//        for (int i = size-1; i>=0;i--){
+//            reverse[index] = array[i];
+//            index ++;
+//        }
+//        array = reverse;
+        int change;
+        int index =0;
+        for(int i = size-1;i>= size/2;i--){
+            change = array[i];
+            array[i] = array[index];
+            array[index] = change;
+            index++;
+        }
+    }
+
 }
